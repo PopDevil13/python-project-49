@@ -16,7 +16,7 @@ def brain_even():
            print(f"'{user_answer}',is wrong answer ;(. Correct answer was, '{correct_answer}'")
            return
     
-    print('Congratulations,', name)
+    print(f"Congratulations, {name}!")
        
     
     
