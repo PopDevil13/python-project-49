@@ -21,14 +21,14 @@ def brain_progression():
         random_index = random.randint(0, len(current_list)-1)
         hidden_element = current_list[random_index]
         current_list[random_index] = '..'
-        print(f'Question:', current_list)
-        print(hidden_element)
+        print(f'Question:', *current_list)
         user_answer = int(input('Your answer: '))
         if user_answer == hidden_element:
             win_counter += 1
             print('Correct!')
         else:
              print(f"'{user_answer}',is wrong answer ;(. Correct answer was, '{hidden_element}'")
-        return
+             return
+            
     print(f"Congratulations, {name}!")
     
