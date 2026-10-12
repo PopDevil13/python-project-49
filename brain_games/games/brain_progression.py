@@ -5,7 +5,7 @@
 from brain_games.cli import welcome_user
 import random
 def arif_listing():
-    start = random.randint(1, 20)
+    start = random.randint(3, 20)
     step = random.randint(2, 10)
     count = 10
     stop = start + (step*count)
@@ -22,7 +22,7 @@ def brain_progression():
         hidden_element = current_list[random_index]
         current_list[random_index] = '..'
         print(f'Question:', *current_list)
-        user_answer = int(input('Your answer: '))
+        
         if user_answer == hidden_element:
             win_counter += 1
             print('Correct!')
@@ -32,3 +32,4 @@ def brain_progression():
             
     print(f"Congratulations, {name}!")
     
+user_answer = int(input('Your answer: '))
