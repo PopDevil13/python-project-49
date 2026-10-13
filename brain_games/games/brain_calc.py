@@ -8,10 +8,18 @@ def brain_calc():
     while win_counter < 3:
         a = random.randint(1,100)
         b = random.randint(1,100)
-        question = (f'{a} {random.choice(operators)} {b}')
-        answer = str(eval(question))
+        random_op = random.choice(operators)
+        if random_op == '+':
+             expr = a + b
+        elif random_op == '-':
+             expr = a - b
+        elif random_op == '*':
+             expr = a * b
+        question = (f'{a} {random_op} {b}')
+        
         print(question)
-        user_answer = input()
+        answer = str(expr)
+        user_answer = str(input())
         if user_answer == answer:
                 win_counter += 1
                 print('Correct!')
