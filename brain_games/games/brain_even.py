@@ -9,7 +9,7 @@ def brain_even():
         random_number = random.randint(1, 100)
         correct_answer = 'yes' if random_number % 2 == 0 else 'no'
         print("Question:", random_number)
-        user_answer = input()
+        user_answer = input('Your answer: ')
         if user_answer == correct_answer:
            win_counter += 1
         elif user_answer != correct_answer:

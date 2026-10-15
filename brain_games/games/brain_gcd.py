@@ -9,8 +9,9 @@ def brain_gcd():
         a = random.randint(1,100)
         b = random.randint(1,100)
         gcd = math.gcd(a, b)
+        gcd = str(gcd)
         print(f'Question:', a, b)
-        user_answer = int(input())
+        user_answer = str(input('Your answer: '))
         correct_answer = gcd
         if user_answer == correct_answer:
             win_counter += 1

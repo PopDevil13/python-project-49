@@ -19,7 +19,7 @@ def brain_calc():
         
         print(question)
         answer = str(expr)
-        user_answer = str(input())
+        user_answer = str(input("Your answer: "))
         if user_answer == answer:
                 win_counter += 1
                 print('Correct!')
