@@ -15,7 +15,7 @@ def brain_calc():
              expr = a - b
         elif random_op == '*':
              expr = a * b
-        question = (f'{a} {random_op} {b}')
+        question = (f'Question: {a} {random_op} {b}')
         
         print(question)
         answer = str(expr)
