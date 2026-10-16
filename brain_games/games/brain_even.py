@@ -14,6 +14,7 @@ def brain_even():
            win_counter += 1
         elif user_answer != correct_answer:
            print(f"'{user_answer}',is wrong answer ;(. Correct answer was, '{correct_answer}'")
+           print(f"Let's try again, {name}!")
            return
     
     print(f"Congratulations, {name}!")

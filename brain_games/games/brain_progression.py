@@ -28,6 +28,7 @@ def brain_progression():
             print('Correct!')
         else:
              print(f"'{user_answer}' is wrong answer ;(. Correct answer was: '{hidden_element}'")
+             print(f"Let's try again, {name}!")
              return
             
     print(f"Congratulations, {name}!")
