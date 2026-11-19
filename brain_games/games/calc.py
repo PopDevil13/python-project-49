@@ -1,8 +1,7 @@
 import random
 
-from brain_games.cli import welcome_user
-
 DESCRIPTION = 'What is the result of the expression?'
+
 
 def get_question_and_answer():
     operators = ["+", "-", "*"]
