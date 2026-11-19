@@ -12,7 +12,7 @@ def run_game(game) -> None:
         user_answer: str = input("Your answer: ")
         if user_answer != answer:
             print(f"'{user_answer}' is wrong answer ;(. "
-                  f"Correct answer was, '{answer}'"
+                  f"Correct answer was '{answer}'"
                 )
             print(f"Let's try again, {name}!")
             return
