@@ -2,6 +2,7 @@ import random
 
 DESCRIPTION = 'What number is missing in the progression?'
 
+
 def arif_listing():
     start = random.randint(3, 20)
     step = random.randint(2, 10)
@@ -17,8 +18,7 @@ def get_question_and_answer():
 
     answer = str(progression[random_index])
     progression[random_index] = ".."
-
-    question = str(progression)
+    question = " ".join(str(num) for num in progression)
     return question, answer
 
        
